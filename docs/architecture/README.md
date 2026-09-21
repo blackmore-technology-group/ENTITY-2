@@ -31,3 +31,5 @@ The reference implementation is divided into:
 
 The controlling authority doctrine is recorded in `ADR-0004-SOVEREIGN-AUTHORITY-DOCTRINE.md`.
 The Protocol 2 data-commodity/exchange separation is recorded in `ADR-0005-DATA-COMMODITY-EXCHANGE-PROTOCOL.md`.
+
+Protocol 2 data-market interoperability is specified in `sdk/schemas/ENTITY_DATA_MARKET_INTEROP_v1.md`.

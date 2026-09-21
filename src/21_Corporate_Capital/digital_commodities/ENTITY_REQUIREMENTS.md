@@ -56,7 +56,9 @@ Parent baseline: SERS-ENTITY-003 v2.2 Sections 151–172.
 - The exchange SHALL trade defined rights instruments; raw data need not leave sovereign custody when compute-to-data or access-right models apply.
 
 ## Qualification Boundary
-- Development qualification SHALL include primary trading, secondary resale, double-sale prevention, supply ceiling enforcement, consumption, settlement gating and market-chain verification.
-- Destructive recovery/export verification, federation between unrelated market implementations, market-chaos campaigns, royalties, buyer-eligibility integrations and regulated live venue integration remain separate qualification gates.
+- Internal qualification SHALL cover primary/secondary trading, double-sale prevention, supply ceilings, consumption, settlement gating, signed market chains, remote signed orders, buyer eligibility, collateral evidence, royalties, destructive recovery/export and adversarial tamper/replay campaigns.
+- Provider-independent market packages SHALL include the public Entity manifests and external trust records needed for standalone verification without raw underlying data.
+- An external-venue adapter SHALL exist but SHALL fail closed unless both authorization evidence and a provider integration are configured.
+- Independent external interoperability remains a separate evidence gate because it requires an unrelated implementation operated outside the BTG reference implementation.
 - This extension SHALL NOT alter frozen ENTITY Protocol 1.0/conformance artifacts.
 - This extension SHALL NOT imply that ENTITY core operates a public securities exchange, broker/dealer, transfer agent or regulated securities venue.

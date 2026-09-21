@@ -9,6 +9,9 @@
     "counterfactual_results_are_model_dependent_analysis": true,
     "data_commodity_exchange_development_source_present": true,
     "data_commodity_market_external_interop": false,
+    "data_commodity_market_external_venue_adapter_present": true,
+    "data_commodity_market_internal_qualified": true,
+    "data_commodity_market_provider_independent_verifier": true,
     "data_commodity_market_regulated_execution": false,
     "entity_only_export_foreign_entity_traversal": false,
     "entity_remains_authority_root": true,
@@ -35,5 +38,5 @@
   },
   "release": "2.0.0-alpha1",
   "schema": "entity-development-release-manifest-v1",
-  "status": "DEVELOPMENT_FULL_ADAM_AND_CAUSAL_NIKI_INTEGRATED"
+  "status": "DEVELOPMENT_FULL_ADAM_CAUSAL_NIKI_AND_DATA_MARKET_INTERNALLY_QUALIFIED"
 }

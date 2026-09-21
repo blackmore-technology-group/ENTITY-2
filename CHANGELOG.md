@@ -3,6 +3,10 @@
 ## 2.0.0-alpha1 - 2026-09-18
 
 - Added Protocol 2 development support for sovereign `DATA_COMMODITY` records and separately tradable data-right instruments.
+- Completed Protocol 2 signed remote-order federation, buyer eligibility/collateral gates and externally attested settlement.
+- Added deterministic royalty allocation, provider-independent market evidence export and standalone verification.
+- Added destructive recovery/export and adversarial market qualification coverage.
+- Added a fail-closed externally authorized venue adapter; live provider authorization remains external configuration/evidence.
 - Added deterministic limit-order matching, rights reservation, settlement-gated transfer, secondary resale, consumption and signed hash-chained market evidence.
 - Added a separate fail-closed data-market policy authority; the existing qualified corporate-capital classifier remains unchanged.
 - Added the full ADAM v1.0 integration development line.
