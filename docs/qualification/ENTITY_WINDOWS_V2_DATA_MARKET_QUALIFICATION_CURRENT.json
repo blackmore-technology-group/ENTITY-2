@@ -1,0 +1,90 @@
+{
+  "artifacts": {
+    "entity_cli": {
+      "bytes": 21574431,
+      "sha256": "1271adcc7dcb042d9f70acc5894968f279c38490534efc27ee4ff27318a89e8b"
+    },
+    "entity_gui": {
+      "bytes": 21571808,
+      "sha256": "7159bee10ce78755c4cfc1d62bec2c59fc2e2c2307c0c1f63fea058d5136c034"
+    },
+    "entity_setup": {
+      "bytes": 60783867,
+      "sha256": "7a8a8e0abe16943763385146d86f212ad0bdb7cee2d3513ef0305764eaf7f628"
+    },
+    "gui_smoke": {
+      "bytes": 559,
+      "sha256": "f7639928587b16441781c66d4a7e0e8b2670dca744e7008bacf33a2e8a8a5e0c"
+    },
+    "market_package": {
+      "bytes": 21900,
+      "sha256": "27bef6948997d073d976f5d7fbd6c7c443660e3855bca13d5f135b41a7004c3d"
+    },
+    "market_smoke": {
+      "bytes": 13396,
+      "sha256": "35bcee25ea12d43e3041c5c016b222459cd4cdb7e3f34e9002e2c3838731f4de"
+    },
+    "product_manifest": {
+      "bytes": 41871,
+      "sha256": "bbcffa6694ed2d98d763b639200c6be4ed29c510034ab8a290fc951b4ae48688"
+    },
+    "windows_build_descriptor": {
+      "bytes": 478,
+      "sha256": "f26edae5146a991334f0b33fb8516016984cc3d281d5cee3c9296fac147d0901"
+    }
+  },
+  "claims": {
+    "data_market_engineering_present": true,
+    "external_interoperability_complete": false,
+    "final_protocol_2_release_claimed": false,
+    "regulated_execution_claimed": false,
+    "windows_package_internally_qualified": true
+  },
+  "classification": "ENTITY_2_DEVELOPMENT_POST_CGSI_INTERNAL_QUALIFIED_EXTERNAL_GATES_PENDING",
+  "external_gates_pending": [
+    "independent_external_protocol_2_implementation",
+    "independent_external_market_interoperability",
+    "live_regulated_venue_authorization",
+    "external_regulatory_classification"
+  ],
+  "generated_at_ms": 1790000996981,
+  "gui_gateway_smoke": {
+    "gateway_reachable": true,
+    "gateway_schema": "entity-open-sdk-gateway-v1.1",
+    "gui_alive": true,
+    "result": "PASS"
+  },
+  "internal_sealed_evidence_sha256": "95a49ca0f3d52ee991270517355f2ef83f6b1b3b0bcdfec18fb2bae1efe3526e",
+  "local_machine_paths_published": false,
+  "market_smoke": {
+    "invariants_after": "PASS",
+    "invariants_before": "PASS",
+    "package_verification": "PASS",
+    "result": "PASS",
+    "trade_status": "SETTLED"
+  },
+  "product": "ENTITY",
+  "protocol_1": "FROZEN_UNCHANGED",
+  "protocol_2": "DEVELOPMENT",
+  "public_regression": {
+    "pytest_failed": 0,
+    "pytest_passed": 22,
+    "unittest_failed": 0,
+    "unittest_passed": 11
+  },
+  "schema": "entity-windows-v2-data-market-public-qualification-v1",
+  "security_boundary": {
+    "c2pa_sample_private_keys_removed": true,
+    "c2pa_upstream_zip_with_private_keys_removed": true,
+    "installed_private_key_scan": "PASS",
+    "payload_private_key_scan": "PASS",
+    "private_keys_bundled": false
+  },
+  "source_commit": "744c17beb52ad4003d31aa0102a7ac0059b8ac03",
+  "version": "2.0.0-alpha1",
+  "windows_clean_install": {
+    "files_verified": 203,
+    "manifest_sha256": "bbcffa6694ed2d98d763b639200c6be4ed29c510034ab8a290fc951b4ae48688",
+    "result": "PASS"
+  }
+}
