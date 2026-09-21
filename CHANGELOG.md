@@ -2,6 +2,9 @@
 
 ## 2.0.0-alpha1 - 2026-09-18
 
+- Added Protocol 2 development support for sovereign `DATA_COMMODITY` records and separately tradable data-right instruments.
+- Added deterministic limit-order matching, rights reservation, settlement-gated transfer, secondary resale, consumption and signed hash-chained market evidence.
+- Added a separate fail-closed data-market policy authority; the existing qualified corporate-capital classifier remains unchanged.
 - Added the full ADAM v1.0 integration development line.
 - Added bounded NIKI structural causal models, hard interventions, counterfactual reasoning and adaptive cognition routing.
 - Causal model persistence requires explicit ENTITY approval; NIKI remains non-authoritative and ADAM remains the governed executor.
