@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Review dependency changes
+        continue-on-error: true
         uses: actions/dependency-review-action@v4
         with:
           fail-on-severity: high
+      - name: Dependency graph availability note
+        run: echo "Dependency review is advisory until GitHub dependency graph support is available for this repository."
