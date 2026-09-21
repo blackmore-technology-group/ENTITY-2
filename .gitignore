@@ -1,0 +1,147 @@
+# ENTITY public repository ignore policy
+# Do not weaken the sovereignty/credential exclusions without security review.
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Build/package output
+build/
+dist/
+out/
+target/
+*.egg-info/
+*.whl
+*.exe
+*.dll
+*.so
+*.dylib
+*.msi
+*.dmg
+*.ipa
+*.apk
+*.aab
+*.zip
+*.tar
+*.tar.gz
+
+# Runtime / mutable state
+/entity_state/
+/runtime_state/
+/state/
+/states/
+/data/
+/instance/
+**/entity_state/
+**/runtime_state/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.entitybackup
+
+# ENTITY authority and operational material
+/bindings/
+/device_bindings/
+/principal_bindings/
+/recovery/
+/backups/
+/private/
+/secrets/
+/credentials/
+/production_state/
+/BTG_ENTITY_PRODUCTION_STATE/
+**/production_state/
+**/BTG_ENTITY_PRODUCTION_STATE/
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.csr
+*.der
+*.crt
+*.cer
+*.secret
+*.secrets
+*private_key*
+*recovery_key*
+**/*_principal_binding.json
+**/*_device_binding.json
+**/credentials.json
+**/secrets.json
+
+# Environment / tokens
+.env
+.env.*
+!.env.example
+*.token
+*.tokens
+auth.json
+cookies.json
+
+# Qualification/runtime evidence that may contain machine or user state
+/evidence/
+/qualification_output/
+/test_output/
+/chaos_output/
+/logs/
+*.log
+
+# Node/Web
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+.next/
+.nuxt/
+coverage/
+
+# Android/Gradle
+.gradle/
+local.properties
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Apple/Xcode/Swift
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.build/
+.swiftpm/
+Package.resolved
+
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.nupkg
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary/generated
+/tmp/
+/temp/
+.cache/
