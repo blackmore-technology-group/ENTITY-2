@@ -1,0 +1,43 @@
+{
+  "abi_version": "1",
+  "authority": "data_commodity_exchange_v2",
+  "declared_scope": "ENTITY_2_DATA_COMMODITY_RIGHTS_MARKET_INTERNAL_QUALIFICATION",
+  "exports": [
+    "DataCommodityExchangeV2",
+    "AuthorizedVenueAdapter"
+  ],
+  "external_gates_pending": [
+    "unrelated_third_party_implementation_interoperability",
+    "live_provider_credentials_and_authorization",
+    "jurisdiction_specific_legal_or_regulatory_determination"
+  ],
+  "implementation_sha256": "339846b249801c70763cfc016a72a2b458ae5517dca666926b79d81a821b6858",
+  "implementation_version": "2.3.0-dev2",
+  "independent_verifier": "tools/verify_data_market_package.py",
+  "independent_verifier_sha256": "f5aac4a62e97ec1effbfbd61e1fbebaeeb715e19eb4fb674332bffd033c38a9f",
+  "interop_profile_sha256": "3eec961f1532b0eed601929eb5247a8bcae58a384885029d4a625cc3443fbdcf",
+  "protocol_1_modified": false,
+  "python_file": "canonical_data_commodity_exchange_v2.py",
+  "qualification_evidence": [
+    {
+      "path": "docs/qualification/DATA_MARKET_STATUS.md",
+      "sha256": "70a0ce7ba1d7ad871561dac35ae99ac2a08d08d76251aeaa5245dc432e7e3e2a"
+    }
+  ],
+  "qualification_tests": [
+    "tests/test_data_commodity_exchange.py",
+    "tests/test_data_market_full_qualification.py",
+    "tests/test_authorized_venue_adapter.py"
+  ],
+  "regulated_execution_enabled": false,
+  "requirements_sha256": "7f28209c232e9ceef8416b4e2d1ea982854eb34e7622c4305735221464ec2eb3",
+  "schema": "entity-runtime-binding-v1",
+  "status": "QUALIFIED",
+  "supporting_files": [
+    "canonical_data_commodity_exchange.py",
+    "canonical_regulated_venue_adapter.py",
+    "market_policy/canonical_data_market_policy.py",
+    "market_policy/canonical_data_market_compliance.py"
+  ],
+  "venue_adapter_sha256": "69337d4e875297af062c43eb1b6c9221dd05af17486d396bdd12e46c637862c0"
+}

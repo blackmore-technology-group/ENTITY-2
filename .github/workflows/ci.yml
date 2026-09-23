@@ -18,8 +18,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install reference dependencies
-        run: python -m pip install -r requirements.txt
+      - name: Install reference and test dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install pytest
 
       - name: Validate published source set
         run: |

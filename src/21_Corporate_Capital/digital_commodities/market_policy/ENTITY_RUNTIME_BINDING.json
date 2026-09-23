@@ -1,0 +1,31 @@
+{
+  "abi_version": "1",
+  "authority": "data_market_policy_and_compliance_v1",
+  "compliance_sha256": "ccf77db14177cee85e21b4824f85fdc450c584708e6330c2ed6525224765b061",
+  "declared_scope": "ENTITY_2_DATA_MARKET_POLICY_AND_EXTERNAL_EVIDENCE_GATES",
+  "exports": [
+    "DataMarketPolicyRegistry",
+    "DataMarketComplianceGate"
+  ],
+  "external_gates_pending": [
+    "live_kyc_aml_or_eligibility_provider",
+    "live_collateral_payment_provider",
+    "jurisdiction_specific_authoritative_determination"
+  ],
+  "implementation_sha256": "7e9f5708f07ae59a6cd8f0e877454c9da4dcdb71e703ff59661dd5eef2b94bc8",
+  "implementation_version": "2.3.0-dev2",
+  "legal_determination": false,
+  "python_file": "canonical_data_market_policy.py",
+  "qualification_evidence": [
+    {
+      "path": "docs/qualification/DATA_MARKET_STATUS.md",
+      "sha256": "70a0ce7ba1d7ad871561dac35ae99ac2a08d08d76251aeaa5245dc432e7e3e2a"
+    }
+  ],
+  "requirements_sha256": "829eacdbe08040f93fd632ab42ebc814aea63cbfdf54030bae9fc5887941db9a",
+  "schema": "entity-runtime-binding-v1",
+  "status": "QUALIFIED",
+  "supporting_files": [
+    "canonical_data_market_compliance.py"
+  ]
+}
