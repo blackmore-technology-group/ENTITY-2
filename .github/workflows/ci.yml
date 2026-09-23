@@ -26,7 +26,8 @@ jobs:
       - name: Validate published source set
         run: |
           test -f src/15_Operations/backups/canonical_portable_state.py
-          test -f src/04_Entity_Registry/credentials/canonical_credentials.py          test -f src/22_Sovereign_Domain/recovery/canonical_domain_recovery.py
+          test -f src/04_Entity_Registry/credentials/canonical_credentials.py
+          test -f src/22_Sovereign_Domain/recovery/canonical_domain_recovery.py
           test -f sdk/principal_binding/ENTITY_PRINCIPAL_BINDING_v1.schema.json
 
       - name: Compile published Python
