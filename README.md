@@ -1,189 +1,146 @@
-# ENTITY
+# ENTITY-2
 
-**Provider-independent sovereign digital authority infrastructure.**
+**BTG-controlled development line for future ENTITY market, integration and protocol work.**
 
-ENTITY is Blackmore Technology Group's open-source protocol and reference implementation for persistent Entity identity, delegated authorization, provenance, rights claims, verification, portable state, recovery, and trusted application interoperability.
+`ENTITY-2` is a public development repository maintained by **Blackmore Technology Group Limited (BTG)**. It is used for post-release engineering work including sovereign data commodities, rights-aware exchange, ADAM/NIKI integration, market evidence and related protocol experiments.
 
-> Infrastructure possession does not become sovereign authority.
+> **This repository is not the current protected ENTITY release, not the authoritative external conformance kit, and not an independent third-party implementation.**
 
-## Independent implementers wanted
+## Public project map
 
-ENTITY Protocol 1.0 is **FROZEN_FOR_EXTERNAL_CONFORMANCE**, and BTG is actively seeking an unrelated implementation built from the public protocol rather than from the BTG reference runtime.
+Use the repository that matches the work you are trying to evaluate:
 
-Rust, Go, C#, TypeScript, Java/Kotlin and Swift implementations are especially useful. The authoritative sealed kit provides the protocol, schemas, profiles, trust material, valid/invalid vectors, black-box runner and live-interoperability procedure.
-
-- **[Join the independent implementation discussion](https://github.com/blackmore-technology-group/ENTITY/discussions/9)**
-- **[Take the clean-room conformance challenge](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/issues/2)**
-- **[Open the sealed ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)**
-
-Independent external interoperability is still **PENDING**. These public challenges exist to test that milestone rather than assume it.
-
-## Download ENTITY for Windows
-
-**ENTITY 1.0.0-rc2 for Windows x64 is publicly available now.**
-
-> **[Download ENTITY 1.0.0-rc2 for Windows x64](https://github.com/blackmore-technology-group/ENTITY/releases/download/v1.0.0-rc2/ENTITY_1.0.0-rc2_WINDOWS_x64_SIGNED.zip)**
-
-Release page: **[ENTITY 1.0.0-rc2 — First Public Release Candidate](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v1.0.0-rc2)**
-
-| Windows release item | Value |
+| Purpose | Authoritative location |
 | --- | --- |
-| Product version | **1.0.0-rc2** |
-| Platform | **Windows x64** |
-| Archive | `ENTITY_1.0.0-rc2_WINDOWS_x64_SIGNED.zip` |
-| SHA-256 | `aa02846cfbfe4871aa093815cbb269b82ac9551b513c9b872c84584576b42aa4` |
-| Distribution signature | **ENTITY Ed25519 signed manifest — verified** |
-| Microsoft Authenticode | **Not currently signed** |
-| Independent external interoperability | **PENDING** |
+| Current protected ENTITY release and reference implementation | [blackmore-technology-group/ENTITY](https://github.com/blackmore-technology-group/ENTITY) |
+| Current protected release | [ENTITY v3.3.0 — Verifiable Reality, Evidence and Economic Causality](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.3.0) |
+| Frozen Protocol 1.0 external conformance target | [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit) |
+| Future/development work | **this repository (`ENTITY-2`)** |
 
-The archive contains the Windows GUI and CLI, the sanitized canonical runtime required by the launchers, build provenance, public signer material, SHA-256 verification material, and the signed ENTITY release manifest.
+The protected ENTITY v3.3.0 release commit is:
 
-The Windows product release and the protocol conformance kit are deliberately separate:
+`9c79f987207592cb6791e1a8956f23351cdfb2d3`
 
-- **ENTITY** — the actual open-source reference implementation and downloadable Windows product.
-- **[ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)** — the authoritative sealed clean-room test target for independent implementations.
+The current authoritative Protocol 1.0 conformance-kit release is **v1.0.2**.
 
-The repository has subsequently received RC2.1/RC2.2 source and public-packaging corrections. The currently published Windows executable build identifies itself as **1.0.0-rc2**, so it remains attached to the matching immutable `v1.0.0-rc2` release rather than being relabeled as a different binary version.
+## Claim boundary
 
-ENTITY is designed so that a person, organization, application, or other Entity can preserve cryptographic identity and governed authority across devices, hosts, providers, and infrastructure changes without making a storage provider, cloud host, registrar, resolver, application vendor, or Blackmore Technology Group the sovereign authority merely because it operates infrastructure.
+Work in this repository can be incomplete, experimental, superseded or awaiting qualification. A branch, commit, pull request, passing local test or merged development change does **not** automatically become:
 
-## Release status
+- a new protected ENTITY release;
+- a frozen protocol revision;
+- external conformance evidence;
+- independent interoperability evidence;
+- an independent security review;
+- a legal, regulatory, accounting or market determination.
 
-| Component | Status |
-| --- | --- |
-| Public source/reference repository | **1.0.0-rc2.2** |
-| Windows x64 product build | **1.0.0-rc2** — [download](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v1.0.0-rc2) |
-| ENTITY Protocol | **1.0 — FROZEN_FOR_EXTERNAL_CONFORMANCE** |
-| Master requirements | **SERS-ENTITY-003 v2.2 — 172 normative sections** |
-| Sovereign Domain profile | **SERS-ENTITY-DOMAIN-001 v1.0** |
-| Internal qualification | Evidence-backed RC2 qualification completed for the published reference implementation scope |
-| Independent external interoperability | **PENDING** |
+Release claims belong with the evidence package and protected release in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.
 
-The protocol freeze stabilizes semantics for external conformance work. It is **not** a claim that unrelated third-party implementations have already passed interoperability qualification.
+BTG-controlled work—including clean-room work in other BTG repositories—is not described as unrelated third-party validation.
+
+## Development focus
+
+Current engineering themes include:
+
+- sovereign data-commodity objects and rights-bearing instruments;
+- listing, disclosure, order/RFQ/auction and price-discovery mechanics;
+- clearing, settlement and entitlement state;
+- usage evidence, derived outputs and economic consequences;
+- rights-aware exchange and market recovery;
+- ADAM/NIKI integration boundaries;
+- provider-independent evidence and authority semantics;
+- failure, rollback, recovery and portability testing.
+
+The intended market lifecycle is:
+
+**DCO → Instrument → Listing → Disclosure → Order/RFQ/Auction → Price Discovery → Trade → Clearing → Settlement → Entitlement → Usage → Derived Output → Economic Consequence**
+
+Data economics in ENTITY concerns governed **rights and authority around data**, not artificial scarcity of byte copies.
 
 ## Core invariants
 
-ENTITY separates concepts that conventional platforms often collapse:
+Development work must preserve the project’s authority boundaries:
 
-- **Identity is not an account.**
-- **Registration is not ownership.**
-- **Provenance is not proof of legal rights or truth.**
-- **Possession, hosting, routing, or storage do not create sovereign authority.**
-- **Applications and agents act only through explicit, scoped, revocable authority.**
-- **Usage does not become realized economic value without the required evidence.**
-- **Historical signed semantics are superseded, not silently rewritten.**
-- **An Entity identity survives replacement of a device, host, provider, or BTG infrastructure.**
+- identity is not an account;
+- registration is not ownership;
+- provenance is not truth;
+- a valid signature is not objective external truth;
+- possession, hosting and storage do not create sovereign authority;
+- external evidence sources do not silently become protocol authority;
+- generic application events cannot mutate protected authority, rights or economic state;
+- historical signed state is superseded rather than silently rewritten;
+- internal qualification is not independent external validation.
 
-## Repository layout
+## Engineering workflow
 
-```text
-ENTITY/
-├── src/
-│   ├── 01_Core_Runtime/
-│   ├── 04_Entity_Registry/
-│   ├── 08_Data_Vaults/
-│   ├── 15_Operations/
-│   └── 22_Sovereign_Domain/
-├── sdk/
-│   ├── open_entity_sdk/
-│   ├── open_entity_sdk_v1_1/
-│   ├── principal_binding/
-│   ├── simple_sdk/
-│   ├── android_sdk/
-│   ├── apple_sdk/
-│   ├── web_sdk/
-│   └── windows_sdk/
-├── protocol/
-├── docs/
-│   ├── requirements/
-│   ├── architecture/
-│   └── qualification/
-├── examples/
-└── tests/
-```
+`main` is protected. Changes should flow through pull requests and required checks.
 
-The repository intentionally excludes production databases, private keys, machine-specific principal bindings, recovery secrets, operational backups, BTG production state, generated installers, and qualification environments.
+Current required protection includes:
+
+- public conformance/unit test gate;
+- dependency review;
+- CodeQL analysis for GitHub Actions;
+- CodeQL analysis for Python;
+- linear history;
+- resolved review conversations;
+- no force pushes or branch deletion.
+
+Development work should identify the exact branch/commit tested and should not describe an unqualified development branch as a release.
 
 ## Quick start
 
-Python 3.11+ is recommended for the reference implementation.
+Python 3.11+ is recommended for the current reference/development runtime.
 
 ```powershell
-git clone https://github.com/blackmore-technology-group/ENTITY.git
-cd ENTITY
+git clone https://github.com/blackmore-technology-group/ENTITY-2.git
+cd ENTITY-2
 python -m pip install -r requirements.txt
 python -m compileall -q src sdk protocol
 python -m unittest discover -s tests -v
 ```
 
-A minimal developer facade is provided at:
+Passing this local smoke path is useful engineering evidence for the checked-out commit. It is not by itself a release or interoperability qualification.
 
-```text
-sdk/simple_sdk/canonical_simple_entity_sdk.py
-```
+## External conformance and interoperability
 
-The Open SDK v1.1 separates the **producer application** from the **asset controller** and requires an explicit principal/device/application binding before canonical ingestion.
+Unrelated implementers should work from the sealed public conformance kit rather than using this repository as their implementation source:
 
-The Open SDK does not require raw content bytes. Applications can submit cryptographic hashes and bounded metadata while retaining source data under the controller's own custody.
+- [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)
+- [General independent implementation challenge](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/issues/2)
+- [ENTITY interoperability challenge](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/INTEROPERABILITY_CHALLENGE.md)
+- [Interoperability status](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/interoperability/STATUS.md)
 
-## Open SDK event boundary
+Independent external implementation and live interoperability remain evidence-gated milestones. They should be recorded only when an unrelated party actually produces the required evidence.
 
-Generic application events are intentionally non-authoritative. Allowed event namespaces include:
+## Security
 
-```text
-application.*
-data.*
-model.*
-knowledge.*
-software.*
-evidence.*
-```
-
-Generic events cannot be used to bypass canonical authority, consent, rights verification, licensing, settlement, payment, capital, or Digital Commodity subsystems.
-
-## Sovereign Domain
-
-ENTITY Sovereign Domain is designed around a stronger requirement than ordinary DNS or hosting:
-
-> No Entity shall be required to rent continued digital existence from an infrastructure provider.
-
-An Entity domain binds to the cryptographic Entity root rather than a specific DNS account, IP address, device, cloud host, or BTG account. The current profile is defined by `SERS-ENTITY-DOMAIN-001 v1.0`.
-
-Independent external sovereign-domain qualification remains pending.
-
-## Security boundary
-
-**Never commit operational sovereignty state to this repository.**
-
-Do not commit:
+Never commit operational sovereignty state or secrets to this repository, including:
 
 - private signing or recovery keys;
+- credentials, tokens, cookies or API secrets;
 - principal/device/application binding instances;
 - `.entitybackup` files;
-- SQLite/runtime databases;
-- live credentials, tokens, cookies, or API secrets;
-- production state directories;
-- unredacted user or business data.
+- production databases or runtime state;
+- unredacted user, customer or business data.
 
-See [SECURITY.md](SECURITY.md).
+Security-sensitive findings should be handled through the private reporting process in the main ENTITY project rather than publishing exploit details in a public issue.
 
-## Requirements and protocol governance
+## Governance
 
-The controlling engineering baseline is:
+The public project governance and release discipline are maintained in the main ENTITY repository:
 
-- [SERS-ENTITY-003 v2.2](docs/requirements/SERS-ENTITY-003_v2.2_COMPLETE_MASTER_ENGINEERING_DESIGN.md)
-- [SERS-ENTITY-DOMAIN-001 v1.0](docs/requirements/SERS-ENTITY-DOMAIN-001_v1.0.md)
-- [ENTITY Protocol 1.0 Freeze](protocol/ENTITY_PROTOCOL_1_0_FREEZE.json)
-- [Protocol Governance](protocol/ENTITY_PROTOCOL_GOVERNANCE_v1.md)
-- [Sovereign Authority Doctrine](docs/architecture/ADR-0004-SOVEREIGN-AUTHORITY-DOCTRINE.md)
+- [Developer Portal](https://github.com/blackmore-technology-group/ENTITY/blob/main/DEVELOPERS.md)
+- [Governance](https://github.com/blackmore-technology-group/ENTITY/blob/main/GOVERNANCE.md)
+- [Release Policy](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/governance/RELEASE_POLICY.md)
+- [Engineering Evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md)
+- [Security](https://github.com/blackmore-technology-group/ENTITY/blob/main/SECURITY.md)
 
 ## License
 
-ENTITY is licensed under the **Apache License 2.0**. See [LICENSE](LICENSE).
+ENTITY development material in this repository is published under the **Apache License 2.0** where the repository license applies. See [LICENSE](LICENSE).
 
-Blackmore Technology Group may steward specifications and publish new versions, but a conforming published protocol version is not intended to require BTG hosting, DNS, a BTG resolver, or a paid BTG service.
+---
 
-## Project
-
-**Blackmore Technology Group Limited**
-Repository: `blackmore-technology-group/ENTITY`
+**Blackmore Technology Group Limited**  
+Repository: `blackmore-technology-group/ENTITY-2`  
+Role: BTG-controlled future/development engineering line
