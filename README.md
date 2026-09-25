@@ -2,7 +2,7 @@
 
 **BTG-controlled development line for future ENTITY market, integration and protocol experiments.**
 
-> **Looking for the current release? Start with [ENTITY v3.4.0](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.0) in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.**
+> **Looking for the current release? Start with [ENTITY v3.4.1](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.1) in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.**
 
 `ENTITY-2` is a public development repository maintained by **Blackmore Technology Group Limited (BTG)**. It contains post-release engineering work and experiments around sovereign data commodities, rights-aware exchange, market evidence, integrations and related protocol research.
 
@@ -12,7 +12,7 @@
 
 | You want to… | Use |
 | --- | --- |
-| Evaluate or build against the current protected release | [ENTITY v3.4.0 — Global Passport & Continuous Provenance](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.0) |
+| Evaluate or build against the current protected release | [ENTITY v3.4.1 — Protocol Origin Lineage & Sovereign User Bootstrap](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.1) |
 | Start as a developer | [ENTITY Developer Portal](https://github.com/blackmore-technology-group/ENTITY/blob/main/DEVELOPERS.md) |
 | Try a Healthcare, Finance, Manufacturing, AI, Robotics or Defence package | [ENTITY v3.4 domain packages](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/v3.4/DOMAIN_PACKAGES.md) |
 | Reproduce current v3.4 Global Passport evidence | [ENTITY engineering evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md) |
@@ -21,8 +21,8 @@
 
 Current protected release facts:
 
-- release: **ENTITY v3.4.0 — Global Passport & Continuous Provenance**;
-- protected release commit: `2db5bff64507b8d67642122a5ff2fc73dfef9152`;
+- release: **ENTITY v3.4.1 — Protocol Origin Lineage & Sovereign User Bootstrap**;
+- protected release commit: `9822b1b65f8269ebc17208a342809720729ae2f8`;
 - v3.4 sealed Global Passport vectors: **24/24 PASS** — 12 valid / 12 invalid;
 - independent unrelated implementation: **OPEN / PENDING**.
 
