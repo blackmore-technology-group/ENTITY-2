@@ -1,46 +1,36 @@
 # ENTITY-2
 
-**BTG-controlled development line for future ENTITY market, integration and protocol work.**
+**BTG-controlled development line for future ENTITY market, integration and protocol experiments.**
 
-`ENTITY-2` is a public development repository maintained by **Blackmore Technology Group Limited (BTG)**. It is used for post-release engineering work including sovereign data commodities, rights-aware exchange, ADAM/NIKI integration, market evidence and related protocol experiments.
+> **Looking for the current release? Start with [ENTITY v3.4.0](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.0) in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.**
 
-> **This repository is not the current protected ENTITY release, not the authoritative external conformance kit, and not an independent third-party implementation.**
+`ENTITY-2` is a public development repository maintained by **Blackmore Technology Group Limited (BTG)**. It contains post-release engineering work and experiments around sovereign data commodities, rights-aware exchange, market evidence, integrations and related protocol research.
+
+**This repository is not the current protected ENTITY release, not the authoritative external conformance target, and not an independent third-party implementation.**
 
 ## Public project map
 
-Use the repository that matches the work you are trying to evaluate:
-
-| Purpose | Authoritative location |
+| You want to… | Use |
 | --- | --- |
-| Current protected ENTITY release and reference implementation | [blackmore-technology-group/ENTITY](https://github.com/blackmore-technology-group/ENTITY) |
-| Current protected release | [ENTITY v3.3.0 — Verifiable Reality, Evidence and Economic Causality](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.3.0) |
-| Frozen Protocol 1.0 external conformance target | [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit) |
-| Future/development work | **this repository (`ENTITY-2`)** |
+| Evaluate or build against the current protected release | [ENTITY v3.4.0 — Global Passport & Continuous Provenance](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.0) |
+| Start as a developer | [ENTITY Developer Portal](https://github.com/blackmore-technology-group/ENTITY/blob/main/DEVELOPERS.md) |
+| Try a Healthcare, Finance, Manufacturing, AI, Robotics or Defence package | [ENTITY v3.4 domain packages](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/v3.4/DOMAIN_PACKAGES.md) |
+| Reproduce current v3.4 Global Passport evidence | [ENTITY engineering evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md) |
+| Implement frozen Protocol 1.0 independently | [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit) |
+| Explore future/experimental engineering | **This repository (`ENTITY-2`)** |
 
-The protected ENTITY v3.3.0 release commit is:
+Current protected release facts:
 
-`9c79f987207592cb6791e1a8956f23351cdfb2d3`
+- release: **ENTITY v3.4.0 — Global Passport & Continuous Provenance**;
+- protected release commit: `2db5bff64507b8d67642122a5ff2fc73dfef9152`;
+- v3.4 sealed Global Passport vectors: **24/24 PASS** — 12 valid / 12 invalid;
+- independent unrelated implementation: **OPEN / PENDING**.
 
-The current authoritative Protocol 1.0 conformance-kit release is **v1.0.2**.
+The current authoritative Protocol 1.0 conformance-kit release remains a separate frozen target.
 
-## Claim boundary
+## What belongs here
 
-Work in this repository can be incomplete, experimental, superseded or awaiting qualification. A branch, commit, pull request, passing local test or merged development change does **not** automatically become:
-
-- a new protected ENTITY release;
-- a frozen protocol revision;
-- external conformance evidence;
-- independent interoperability evidence;
-- an independent security review;
-- a legal, regulatory, accounting or market determination.
-
-Release claims belong with the evidence package and protected release in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.
-
-BTG-controlled work—including clean-room work in other BTG repositories—is not described as unrelated third-party validation.
-
-## Development focus
-
-Current engineering themes include:
+Current development themes may include:
 
 - sovereign data-commodity objects and rights-bearing instruments;
 - listing, disclosure, order/RFQ/auction and price-discovery mechanics;
@@ -56,6 +46,21 @@ The intended market lifecycle is:
 **DCO → Instrument → Listing → Disclosure → Order/RFQ/Auction → Price Discovery → Trade → Clearing → Settlement → Entitlement → Usage → Derived Output → Economic Consequence**
 
 Data economics in ENTITY concerns governed **rights and authority around data**, not artificial scarcity of byte copies.
+
+## Claim boundary
+
+Work in this repository can be incomplete, experimental, superseded or awaiting qualification. A branch, commit, pull request, passing local test or merged development change does **not** automatically become:
+
+- a protected ENTITY release;
+- a frozen protocol revision;
+- external conformance evidence;
+- independent interoperability evidence;
+- an independent security review;
+- a legal, regulatory, accounting or market determination.
+
+Release claims belong with the evidence package and protected release in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.
+
+BTG-controlled work—including clean-room work in other BTG repositories—is not described as unrelated third-party validation.
 
 ## Core invariants
 
@@ -73,25 +78,11 @@ Development work must preserve the project’s authority boundaries:
 
 ## Engineering workflow
 
-`main` is protected. Changes should flow through pull requests and required checks.
-
-Current required protection includes:
-
-- public conformance/unit test gate;
-- dependency review;
-- CodeQL analysis for GitHub Actions;
-- CodeQL analysis for Python;
-- linear history;
-- resolved review conversations;
-- no force pushes or branch deletion.
-
-Development work should identify the exact branch/commit tested and should not describe an unqualified development branch as a release.
-
-## Quick start
+`main` is protected. Changes should flow through pull requests and required checks. Development work should identify the exact branch/commit tested and should not describe an unqualified development branch as a release.
 
 Python 3.11+ is recommended for the current reference/development runtime.
 
-```powershell
+```bash
 git clone https://github.com/blackmore-technology-group/ENTITY-2.git
 cd ENTITY-2
 python -m pip install -r requirements.txt
@@ -103,35 +94,27 @@ Passing this local smoke path is useful engineering evidence for the checked-out
 
 ## External conformance and interoperability
 
-Unrelated implementers should work from the sealed public conformance kit rather than using this repository as their implementation source:
+Unrelated implementers should work from published sealed/specification material rather than using this development repository as their implementation source:
 
 - [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)
-- [General independent implementation challenge](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit/issues/2)
+- [ENTITY v3.4 independent classifier task](https://github.com/blackmore-technology-group/ENTITY/issues/27)
 - [ENTITY interoperability challenge](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/INTEROPERABILITY_CHALLENGE.md)
 - [Interoperability status](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/interoperability/STATUS.md)
 
-Independent external implementation and live interoperability remain evidence-gated milestones. They should be recorded only when an unrelated party actually produces the required evidence.
+Independent external implementation and live interoperability remain evidence-gated milestones and should be recorded only when an unrelated party produces the required evidence.
 
 ## Security
 
-Never commit operational sovereignty state or secrets to this repository, including:
+Never commit private signing/recovery keys, credentials/tokens, principal/device/application binding instances, `.entitybackup` files, production databases/runtime state, or unredacted user/customer/business data.
 
-- private signing or recovery keys;
-- credentials, tokens, cookies or API secrets;
-- principal/device/application binding instances;
-- `.entitybackup` files;
-- production databases or runtime state;
-- unredacted user, customer or business data.
-
-Security-sensitive findings should be handled through the private reporting process in the main ENTITY project rather than publishing exploit details in a public issue.
+Security-sensitive findings should use the private reporting process described by the main ENTITY project's [SECURITY.md](https://github.com/blackmore-technology-group/ENTITY/blob/main/SECURITY.md).
 
 ## Governance
 
-The public project governance and release discipline are maintained in the main ENTITY repository:
+Public governance and release discipline live in the main ENTITY repository:
 
 - [Developer Portal](https://github.com/blackmore-technology-group/ENTITY/blob/main/DEVELOPERS.md)
 - [Governance](https://github.com/blackmore-technology-group/ENTITY/blob/main/GOVERNANCE.md)
-- [Release Policy](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/governance/RELEASE_POLICY.md)
 - [Engineering Evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md)
 - [Security](https://github.com/blackmore-technology-group/ENTITY/blob/main/SECURITY.md)
 
