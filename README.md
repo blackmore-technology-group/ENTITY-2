@@ -97,7 +97,7 @@ Passing this local smoke path is useful engineering evidence for the checked-out
 Unrelated implementers should work from published sealed/specification material rather than using this development repository as their implementation source:
 
 - [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)
-- [ENTITY v3.4 independent classifier task](https://github.com/blackmore-technology-group/ENTITY/issues/27)
+- [ENTITY v3.4.1 independent classifier task](https://github.com/blackmore-technology-group/ENTITY/issues/27)
 - [ENTITY interoperability challenge](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/INTEROPERABILITY_CHALLENGE.md)
 - [Interoperability status](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/interoperability/STATUS.md)
 
