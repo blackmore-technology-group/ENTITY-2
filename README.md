@@ -2,31 +2,45 @@
 
 **BTG-controlled development line for future ENTITY market, integration and protocol experiments.**
 
-> **Looking for the current release? Start with [ENTITY v3.4.1](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.1) in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.**
+> **Looking for the current supported release? Start with [ENTITY v3.4.3](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.3) in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.**
 
 `ENTITY-2` is a public development repository maintained by **Blackmore Technology Group Limited (BTG)**. It contains post-release engineering work and experiments around sovereign data commodities, rights-aware exchange, market evidence, integrations and related protocol research.
 
-**This repository is not the current protected ENTITY release, not the authoritative external conformance target, and not an independent third-party implementation.**
+**This repository is not the current supported ENTITY release, not the authoritative external conformance target, and not an independent third-party implementation.**
+
+## Documentation layer
+
+`ENTITY-2` is a **development/experimental engineering repository**. It can explore future protocol or runtime ideas, but material here does not become normative merely because it is public or executable.
+
+Keep these layers separate:
+
+- **ENTITY Protocol 1.0** — frozen public interoperability/conformance target;
+- **ENTITY v3.4.3** — current supported runtime release;
+- **BTDU 3.4.2** — current unchanged Blackmore Technology Data Universe component inside the v3.4.3 runtime;
+- **ENTITY-2** — future/development work that may be incomplete, superseded or never promoted.
 
 ## Public project map
 
 | You want to… | Use |
 | --- | --- |
-| Evaluate or build against the current protected release | [ENTITY v3.4.1 — Protocol Origin Lineage & Sovereign User Bootstrap](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.1) |
+| Evaluate or build against the current supported runtime | [ENTITY v3.4.3](https://github.com/blackmore-technology-group/ENTITY/releases/tag/v3.4.3) |
 | Start as a developer | [ENTITY Developer Portal](https://github.com/blackmore-technology-group/ENTITY/blob/main/DEVELOPERS.md) |
 | Try a Healthcare, Finance, Manufacturing, AI, Robotics or Defence package | [ENTITY v3.4 domain packages](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/v3.4/DOMAIN_PACKAGES.md) |
-| Reproduce current v3.4 Global Passport evidence | [ENTITY engineering evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md) |
+| Review current and historical engineering evidence | [ENTITY engineering evidence](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/ENGINEERING_EVIDENCE.md) |
 | Implement frozen Protocol 1.0 independently | [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit) |
 | Explore future/experimental engineering | **This repository (`ENTITY-2`)** |
 
-Current protected release facts:
+Current supported runtime facts:
 
-- release: **ENTITY v3.4.1 — Protocol Origin Lineage & Sovereign User Bootstrap**;
-- protected release commit: `9822b1b65f8269ebc17208a342809720729ae2f8`;
-- v3.4 sealed Global Passport vectors: **24/24 PASS** — 12 valid / 12 invalid;
+- release: **ENTITY v3.4.3**;
+- release merge commit: `528b70aabd05b1e930b77e4933f157731e47274f`;
+- v3.4.3 Issue #28 remediation module: **76/76 PASS**;
+- full repository source suite: **279/279 PASS**;
+- immutable predecessor: ENTITY v3.4.2 commit `6dfa3d6cc738d9369cf092d2782676bf4f2a46e4`;
+- BTDU component: **3.4.2 unchanged**;
 - independent unrelated implementation: **OPEN / PENDING**.
 
-The current authoritative Protocol 1.0 conformance-kit release remains a separate frozen target.
+The authoritative Protocol 1.0 conformance kit remains a separate frozen target. Historical v3.4.0/v3.4.1/v3.4.2 release evidence remains historical evidence and is not rewritten when the supported runtime advances.
 
 ## What belongs here
 
@@ -43,7 +57,7 @@ Current development themes may include:
 
 The intended market lifecycle is:
 
-**DCO → Instrument → Listing → Disclosure → Order/RFQ/Auction → Price Discovery → Trade → Clearing → Settlement → Entitlement → Usage → Derived Output → Economic Consequence**
+**Digital Commodity Object (DCO) → Instrument → Listing → Disclosure → Order/RFQ/Auction → Price Discovery → Trade → Clearing → Settlement → Entitlement → Usage → Derived Output → Economic Consequence**
 
 Data economics in ENTITY concerns governed **rights and authority around data**, not artificial scarcity of byte copies.
 
@@ -51,16 +65,18 @@ Data economics in ENTITY concerns governed **rights and authority around data**,
 
 Work in this repository can be incomplete, experimental, superseded or awaiting qualification. A branch, commit, pull request, passing local test or merged development change does **not** automatically become:
 
-- a protected ENTITY release;
+- a supported ENTITY release;
 - a frozen protocol revision;
 - external conformance evidence;
 - independent interoperability evidence;
 - an independent security review;
 - a legal, regulatory, accounting or market determination.
 
-Release claims belong with the evidence package and protected release in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.
+Release claims belong with the evidence package and supported release in the main [ENTITY](https://github.com/blackmore-technology-group/ENTITY) repository.
 
 BTG-controlled work—including clean-room work in other BTG repositories—is not described as unrelated third-party validation.
+
+Registration, mirroring, ingestion, verification, provenance recording or custody do not themselves transfer upstream ownership or create automatic economic entitlement.
 
 ## Core invariants
 
@@ -69,12 +85,14 @@ Development work must preserve the project’s authority boundaries:
 - identity is not an account;
 - registration is not ownership;
 - provenance is not truth;
+- protocol origin is not downstream asset origin;
 - a valid signature is not objective external truth;
 - possession, hosting and storage do not create sovereign authority;
 - external evidence sources do not silently become protocol authority;
 - generic application events cannot mutate protected authority, rights or economic state;
 - historical signed state is superseded rather than silently rewritten;
-- internal qualification is not independent external validation.
+- internal qualification is not independent external validation;
+- ingestion or fork custody does not create automatic upstream ownership or economic rights.
 
 ## Engineering workflow
 
@@ -97,7 +115,7 @@ Passing this local smoke path is useful engineering evidence for the checked-out
 Unrelated implementers should work from published sealed/specification material rather than using this development repository as their implementation source:
 
 - [ENTITY Protocol 1.0 Conformance Kit](https://github.com/blackmore-technology-group/ENTITY-Protocol-1.0-Conformance-Kit)
-- [ENTITY v3.4.1 independent classifier task](https://github.com/blackmore-technology-group/ENTITY/issues/27)
+- [ENTITY external verification challenge](https://github.com/blackmore-technology-group/ENTITY/issues/55)
 - [ENTITY interoperability challenge](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/INTEROPERABILITY_CHALLENGE.md)
 - [Interoperability status](https://github.com/blackmore-technology-group/ENTITY/blob/main/docs/interoperability/STATUS.md)
 
